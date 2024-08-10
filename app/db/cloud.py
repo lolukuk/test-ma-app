@@ -1,5 +1,5 @@
 import aiohttp
-from app.config import CLOUD_API_URL, CLOUD_API_KEY
+from db.config import CLOUD_API_URL, CLOUD_API_KEY
 
 # Определяем функцию для загрузки файла в облако
 async def upload_to_cloud(file_path: str):

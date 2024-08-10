@@ -1,9 +1,9 @@
 from fastapi import FastAPI, UploadFile, HTTPException
 from fastapi.responses import FileResponse
 from uuid import uuid4
-from app.models import FileMetadata, Base
-from app.database import SessionLocal, engine
-from app.cloud import upload_to_cloud
+from models.models import FileMetadata, Base
+from db.database import SessionLocal, engine
+from db.cloud import upload_to_cloud
 import aiofiles
 import os
 # Создаём приложение FastAPI
