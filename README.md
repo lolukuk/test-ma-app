@@ -89,3 +89,7 @@ uvicorn app.main:app --reload
 ### Тестирование
 
 Тесты находятся в каталоге `tests`.
+
+### Интерфейс
+
+Тестировал через Swagger в FastAPI
