@@ -6,7 +6,7 @@ from app.database import SessionLocal, engine
 from app.cloud import upload_to_cloud
 import aiofiles
 import os
-
+# Создаём приложение FastAPI
 app = FastAPI()
 
 

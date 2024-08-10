@@ -1,7 +1,15 @@
 import aiohttp
 from app.config import CLOUD_API_URL, CLOUD_API_KEY
 
+# Определяем функцию для загрузки файла в облако
 async def upload_to_cloud(file_path: str):
+    """
+        Загружаем файл в облако.
+
+        Аргументы:
+            file_path (str): Путь к файлу.
+        """
+    # Создаём клиентскую сессию HTTP
     async with aiohttp.ClientSession() as session:
         with open(file_path, 'rb') as file:
             files = {'file': file}

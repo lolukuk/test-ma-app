@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# обявление модели
 class FileResponseSchema(BaseModel):
     uid: str
     filename: str

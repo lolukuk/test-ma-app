@@ -2,7 +2,7 @@ from sqlalchemy import Column, String, Integer
 from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
-
+# Модель для бд
 class FileMetadata(Base):
     __tablename__ = "file_metadata"
 
